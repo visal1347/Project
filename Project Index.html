@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAL PROXY</title>
+
+<style>
+*{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family:Arial,sans-serif;
+}
+
+body{
+    background:#080b17;
+    color:white;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:500px;
+    background:#0d1224;
+    border:2px solid #2d2d50;
+    border-radius:25px;
+    padding:25px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.desc{
+    text-align:center;
+    color:#d0d0d0;
+    line-height:1.6;
+}
+
+.info{
+    background:#131b34;
+    border-radius:15px;
+    padding:15px;
+    margin-top:15px;
+    text-align:center;
+}
+
+.active{
+    color:#00ff84;
+    text-align:center;
+    margin:20px 0;
+    font-weight:bold;
+}
+
+input[type=text]{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:15px;
+    background:#131b34;
+    color:white;
+    margin-bottom:15px;
+}
+
+.check{
+    background:#131b34;
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+button{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:18px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    background:linear-gradient(90deg,#ff4fd8,#5be7ff);
+}
+
+.channels{
+    margin-top:25px;
+}
+
+.channel{
+    background:#131b34;
+    padding:15px;
+    border-radius:15px;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>SAL PROXY</h1>
+
+<p class="desc">
+your Telegram ID
+then activate your IP for the free proxy ports.
+</p>
+
+<div class="info">
+Your IP: <b id="ip">Loading...</b>
+</div>
+
+<div class="info">
+Proxy Port: <b>8086/8080</b>
+</div>
+
+<div class="active">
+Activate My IP For 1 Hour  00:00:00
+</div>
+
+<input type="text" placeholder="Telegram ID">
+
+<div class="check">
+<label>
+<input type="checkbox">
+I have joined all required channels
+</label>
+</div>
+
+<button onclick="activateIP()">
+Activate My IP For 1 Hour
+</button>
+
+<div class="channels">
+<h2>SAL PROXY</h2>
+
+<div class="channel">
+USER IP: 162.220.167.141
+</div>
+
+<div class="channel">
+PROXY PORT: 8086
+</div>
+
+<div class="channel">
+MY ID: 1899089499
+</div>
+
+
+<script>
+fetch("https://api.ipify.org?format=json")
+.then(res => res.json())
+.then(data=>{
+document.getElementById("ip").innerText=data.ip;
+});
+
+function activateIP(){
+alert("Activation Request Sent!");
+}
+</script>
+
+
+</body>
+
+ <div class="proxy-section">
+
+    <h2>Proxy Information</h2>
+
+    <div class="proxy-box">
+        <p><strong>Proxy type:</strong> HTTP</p>
+        <p><strong>Server:</strong> 162.220.167.141</p>
+        <p><strong>Ports:</strong> 8086</p>
+        <p><strong>Username:</strong> none</p>
+        <p><strong>Password:</strong> none</p>
+    </div>
+
+    <div class="warning-box">
+        <p>
+            Important: activate your IP every hour.
+            If you do not activate it, the proxy will stop
+            working for your device.
+        </p>
+    </div>
+
+    <div class="footer-text">
+        Free Proxy Activation System
+    </div>
+
+</div>
+
+</div
+
+const express = require("express");
+const app = express();
+
+app.use(express.json());
+
+app.post("/activate", (req, res) => 
+
+</div
+{
+    const { telegramId, ip } = req.body;
+
+    console.log("Telegram:", telegramId);1899089499
+    console.log("IP:175.100.79.84", ip);
+    
+    res.json({
+        success: true,
+        message: "Activated"
+    });
+});
+
+app.listen(3000);
